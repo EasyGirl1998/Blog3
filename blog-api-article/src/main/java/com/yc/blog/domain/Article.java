@@ -8,10 +8,12 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
 import lombok.Data;
+import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
 
 @Data
 @Table(name = "article")
+@ToString
 public class Article implements java.io.Serializable{
 
 	private static final long serialVersionUID = 1L;
